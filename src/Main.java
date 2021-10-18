@@ -29,6 +29,19 @@ public class Main {
     // For the two additional classes this may require you to be looking at the base class for pricing and then
     // adding totals to final price.
 
+    public static void main(String[] args) {
 
+        Hamburger hamburger = new Hamburger("Basic", "Sausage", 3.56, "White");
+        double price = hamburger.itemizeHamburger();
+        hamburger.addHamburgerAddition1("Tomato", 0.27);
+        hamburger.addHamburgerAddition2("Lettuce", 0.75);
+        hamburger.addHamburgerAddition3("Cheese", 1.27);
+        System.out.println("Total burger price is: " + hamburger.itemizeHamburger());
+
+        HealthyBurger healthyBurger = new HealthyBurger("Bacon", 5.67);
+        healthyBurger.addHealthAddition1("Egg", 5.43);
+        healthyBurger.addHamburgerAddition1("Lentils", 3.41);
+        System.out.println("Total Healthy burger price is: " + healthyBurger.itemizeHamburger());
+    }
 
 }
