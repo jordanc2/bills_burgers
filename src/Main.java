@@ -42,6 +42,9 @@ public class Main {
         healthyBurger.addHealthAddition1("Egg", 5.43);
         healthyBurger.addHamburgerAddition1("Lentils", 3.41);
         System.out.println("Total Healthy burger price is: " + healthyBurger.itemizeHamburger());
+
+        DeluxeBurger deluxe = new DeluxeBurger();
+        deluxe.itemizeHamburger();
     }
 
 }
